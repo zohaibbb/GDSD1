@@ -15,14 +15,15 @@ namespace test11.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class SortList : ContentPage
 	{
-        API da = new API();
+        SortViewModel sortviewModel;
+
         public SortList ()
 		{
 
 			InitializeComponent ();
-            IList<Product> product = da.getProducts();
-            QS.QuickSort(product, 0, product.Count - 1);
-            BindingContext = product;
+            BindingContext = sortviewModel = new SortViewModel();
+
+
         }
 	}
 }

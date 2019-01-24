@@ -11,7 +11,7 @@
                  HasUnevenRows="true"
                 
                  
-                 
+                 ItemSelected="OnItemSelected"
                  CachingStrategy="RecycleElement"
                  >
                 <ListView.ItemTemplate>
