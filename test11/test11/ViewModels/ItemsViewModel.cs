@@ -42,18 +42,16 @@ namespace test11.ViewModels
 
         async Task ExecuteLoadItemsCommand()
         {
-            if (IsBusy)
-                return;
-
-            IsBusy = true;
+          
 
             try
             {
+                IsRefreshing = true;
                 Items.Clear();
                 Items = new ObservableCollection<Product>(da.getProducts());
 
 
-                IsBusy = false;
+                IsRefreshing = false;
             }
 
             catch (Exception ex)
@@ -62,7 +60,7 @@ namespace test11.ViewModels
             }
             finally
             {
-                IsBusy = false;
+                //IsBusy = false;
             }
         }
     }

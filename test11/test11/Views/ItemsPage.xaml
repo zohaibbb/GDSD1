@@ -7,13 +7,15 @@
     
     <ContentPage.Content>
         <StackLayout>
+            
             <ListView x:Name="ItemsListView" 
                 ItemsSource="{Binding Items}"
                 VerticalOptions="FillAndExpand"
                  HasUnevenRows="true"
                  IsPullToRefreshEnabled="True"
                  RefreshCommand="{Binding LoadItemsCommand}"
-                 
+                      
+                 IsRefreshing="{Binding IsRefreshing}"
                  
                  CachingStrategy="RecycleElement"
                  ItemSelected="OnItemSelected">
