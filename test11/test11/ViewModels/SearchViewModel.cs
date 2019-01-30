@@ -31,31 +31,31 @@ namespace test11.ViewModels
             //LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
         }
 
-        async Task ExecuteLoadItemsCommand()
-        {
-            if (IsBusy)
-                return;
+        //async Task ExecuteLoadItemsCommand()
+        //{
+        //    if (IsBusy)
+        //        return;
 
-            IsBusy = true;
+        //    IsBusy = true;
 
-            try
-            {
-                SearchProducts.Clear();
-                SearchProducts = new ObservableCollection<Product>(da.getProducts());
+        //    try
+        //    {
+        //        SearchProducts.Clear();
+        //        SearchProducts = new ObservableCollection<Product>(da.getProducts());
 
 
-                IsBusy = false;
-            }
+        //        IsBusy = false;
+        //    }
 
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-            }
-            finally
-            {
-                IsBusy = false;
-            }
-        }
+        //    catch (Exception ex)
+        //    {
+        //        Debug.WriteLine(ex);
+        //    }
+        //    finally
+        //    {
+        //        IsBusy = false;
+        //    }
+        //}
 
 
     }
