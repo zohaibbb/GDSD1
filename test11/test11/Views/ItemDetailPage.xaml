@@ -56,6 +56,8 @@
                        Style="{DynamicResource ListItemDetailTextStyle}"
                        FontSize="13" />
                 <Image Source="{Binding Item.Image_path}" />
+                <Button x:Name="myButton" Text="Add to Cart" Clicked="Button_Clicked" ></Button>
+                
             </StackLayout>
             
             
