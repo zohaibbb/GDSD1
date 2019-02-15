@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout>
             <SearchBar x:Name="searchBar" SearchButtonPressed="searchBar_SearchButtonPressedAsync"  Placeholder="Type keywords to search"></SearchBar>
-            <Button Text="See Cart" Clicked="Button_Clicked"></Button>
+            <Button Text="See Cart" Clicked="Button_Clicked_1"></Button>
             <StackLayout  x:Name="searchResult">
                 
             </StackLayout>

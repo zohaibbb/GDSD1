@@ -138,7 +138,9 @@ namespace test11.Views
 
         }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+     
+
+        private async Task Button_Clicked_1(object sender, EventArgs e)
         {
             await this.Navigation.PushAsync(new Wishlist());
         }
